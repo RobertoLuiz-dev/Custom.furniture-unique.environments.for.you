@@ -34,7 +34,7 @@
       
       <div id="footer-content">
         <a target="_blank" href="https://www.instagram.com/q5ambientes/"><img src="./Images/logo-instagram.svg" id="instagram" alt="Instagram"></a>
-        <a target="_blank" href="mailto:roberto_luiz_@outlook.com"><img src="./Images/logo-email.png" id="email" alt="email"></a>
+        <a href="#" id="email-link"><img src="./Images/logo-email.png" id="email" alt="email"></a>
         <a target="_blank" href="https://www.instagram.com/dani_cavalcantiaraujo/"><img src="./Images/social-media-logo.png" id="social-media" alt="Profissional de social media responsavel pela divulgação da empresa"></a>
         <a target="_blank" href="https://www.linkedin.com/in/roberto-luiz-0a2774110/"><img src="./Images/web-developer.png" id="web-developer" alt="Web developer responsavel pela criação do site"></a>
       </div>
@@ -43,5 +43,12 @@
   
     <a target="_blank" href="https://www.linkedin.com/in/roberto-luiz-0a2774110/"><img src="./Images/avatar.jpg" id="avatar" alt="Site author avatar"></a>
   
+    <script>
+      document.getElementById("email-link").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        window.open("mailto:roberto_luiz_@outlook.com");
+      });
+    </script>
+
   </body>
 </html>
