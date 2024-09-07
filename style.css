@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+
+  --text-color: hsl(255, 5%, 54%);
+  --span-color: hsla(27, 100%, 50%, 0.792);
+  --pspan-color: hsl(187, 68%, 40%);
+  --links-color: hsl(188, 86%, 25%);
+  --background-color: hsl(204, 26%, 96%);
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  background-color: var(--background-color)
+}
+
+#main-content {
+  width: 80%;
+  margin: 8rem auto;
+}
+
+#main-content img {
+  max-width: 90%; 
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 4rem; 
+  line-height: 5rem;
+  font-weight: normal;
+}
+
+h1 span {
+  font-weight: bold;
+  color:var(--span-color);
+}
+
+p {
+  margin-top: 6rem;
+  font-size: 1.6rem; 
+  line-height: 2.4rem;
+  color: var(--text-color);
+}
+
+span {
+  color: var(--pspan-color);
+  font-weight: bold;
+}
+
+a {
+  font-size: 1.8rem; 
+  line-height: 1.6rem; 
+  font-weight: bold;
+  color: var(--links-color);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  display: inline-block;
+  margin: 0 2rem; 
+}
+
+#instagram {
+  width: 12rem;
+  margin-bottom: -1rem;
+  margin-right: -3rem;
+}
+
+#email {
+  width: 7rem;
+  margin-bottom: -.5rem;
+}
+
+#social-media {
+  width: 7rem;
+}
+
+#web-developer {
+  width: 11rem;
+  margin-left: 1rem;
+}
+
+#footer-content {
+  display: inline;
+  gap: 2rem;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  aspect-ratio: 1;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+#avatar:hover {
+  transform: rotate(15deg) scale(1.2);
+  transition: all .8s;
+  cursor: pointer;
+}
+
+
+@media (width >= 1024px) {
+
+  #main-content {
+    width: 100%;
+  }
+
+}
+
+@media (width < 624px) {
+
+  #footer-content {
+    display: grid;
+    margin-top: -6rem;
+
+  }
+  #footer-content a {
+   line-height: 2.5rem;
+  }
+
+  #instagram {
+    width: 12rem;
+    margin-left: -3rem;
+  }
+  
+  #email {
+    width: 7rem;
+  }
+  
+  #social-media {
+    width: 7rem;
+  }
+  
+  #web-developer {
+    width: 9rem;
+    margin-left: -.4rem;
+  }
+
+}
